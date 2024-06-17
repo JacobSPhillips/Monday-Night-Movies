@@ -1,0 +1,142 @@
+body {
+    font-family: Lato, sans-serif;
+    background-color: #344E41;
+}
+
+h1 {
+    text-align: center;
+}
+
+.top-bar {
+    height: 50px;
+    width: 100%;
+    border-bottom: 2px solid #3A5A40;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+#user-buttons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.user-button {
+    background-color: #A3B18A;
+    margin: 1em;
+    border-radius: 1em;
+    transition: background-color .15s;
+}
+
+.search-bar {
+    background-color: none;
+    margin: 1em;
+}
+
+.user-button:hover {
+    background-color: #588157;
+}
+
+#search {
+    background-color: #A3B18A;
+    border-radius: 1em;
+}
+
+#movie-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#movie-section div {
+    border: 2px solid #081c15;
+    background-color: #A3B18A;
+    text-align: start;
+    height: 400px;
+    width: 38%;
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+img {
+    height: 80%;
+    width: 30%;
+}
+
+#movie-section h2 {
+    margin: 0 5% 1% 2%;
+}
+
+#movie-section h3 {
+    font-weight: 400;
+}
+
+#movie-section span {
+    font-weight: 700;
+}
+
+#movie-description {
+    display: block;
+    width: 50%;
+    margin: 2% 2% 2% 2%;
+}
+
+#movie-length {
+    margin-left: 2%;
+}
+
+.vote-button {
+    margin-left: 2%;
+    width: 30%;
+    border-radius: 3px;
+    border: 0;
+    background: #DAD7CD;
+    padding: 15px 12px 15px 40px;
+    font: bold 9px/1.2 arial;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #344E41;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    outline: none;
+    position: relative;
+    transition: all .3s ease-out;
+    cursor: pointer;
+    overflow: hidden;
+
+    .icon {
+        position: absolute;
+        content: "";
+        left: 10px;
+        top: 10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        display: inline-block;
+        background: #344E41 no-repeat 2px 1px;
+        background-size: 16px auto;
+        transition: all .3s ease-out;
+
+    }
+
+}
+
+.vote-button:hover {
+    background-color: #cecbc2;
+}
+
+.vote-button:active {
+    background-color: #344E41;
+    color: #DAD7CD;
+    width: 20%;
+    text-align: center;
+
+
+    .icon {
+        background: #DAD7CD;
+    }
+}
